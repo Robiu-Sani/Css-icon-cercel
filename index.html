@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="css/all.min.css">
+ <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainBody">
+        <div class="menu">
+            <div class="toggle"><i class="fas fa-user-circle"></i></div>
+            <li style="--i:0;"><a href="#"><i class="fas fa-search"></i></a></li>
+            <li style="--i:1;"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li style="--i:2;"><a href="#"><i class="fas fa-envelope-open-text"></i></a></li>
+            <li style="--i:3;"><a href="#"><i class="fas fa-phone-alt"></i></a></li>
+            <li style="--i:4;"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+            <li style="--i:5;"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li style="--i:6;"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li style="--i:7;"><a href="#"><i class="far fa-eye-slash"></i></a></li>
+        </div>
+    </div>
+    <script>
+        let toggle = document.querySelector(".toggle");
+        let menu = document.querySelector(".menu");
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
